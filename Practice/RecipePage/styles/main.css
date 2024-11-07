@@ -1,0 +1,131 @@
+@font-face {
+    font-family: young-serif;
+    src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family: outfit;
+    src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #f3e5d8;
+}
+article{
+    width: 70rem;
+    position: relative;
+    margin-top:8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 3rem 3rem 0rem 3rem;
+    border-radius: 14px;
+    font-family: outfit, sans-serif;
+    font-size: 1.6rem;
+    color: #5a5856;
+    margin-bottom: 4rem;
+    
+    
+}
+article img{
+    width: 100%;
+    border-radius: 8px;
+}
+article header h1{
+    font-family: young-serif, sans-serif;
+    font-weight: 500;
+    font-size: 3.2rem;
+    padding-top:1.8rem;
+    color: black;
+}
+article header p{
+    padding-top: 1.2rem;
+    font-family: outfit;
+}
+.preparation-time{
+    border-radius: 8px;
+    margin-top: 3rem;
+    padding-top:3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    background-color: #fff7fc;
+}
+.preparation-time h2{
+    margin-left: 2rem;
+    color: #7f3753;
+   
+}
+.preparation-time ul{
+    margin-top: 1rem;
+    margin-left: 4rem;
+    line-height: 2;
+}
+.ingredients{
+    
+}
+.ingredients h2{
+    margin-bottom: 1.2rem;
+    color: #814731;
+    font-family: young-serif, sans-serif;
+    font-weight: 500;
+}
+.ingredients ul{
+    line-height: 2;
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.instructions h2{
+    margin-bottom: 1.2rem;
+    color: #814731;
+    font-family: young-serif, sans-serif;
+    font-weight: 500;
+}
+.instructions ol{
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+.instructions ol li{
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+.nutrition h2{
+    font-family: young-serif, sans-serif;
+    font-weight: 500;
+    color: #814731;
+}
+.nutrition p{
+    margin-top: 1rem;
+}
+.nutrition table{
+    margin-top: 1rem;
+    width: 100%;
+    border-spacing: 0 2rem;
+    
+}
+.nutrition table td{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    
+   
+}
+.nutrition table tr:last-child td{
+    border-bottom: none;
+}
+
+.nutrition table td:nth-child(2){
+    color: #814731;
+    font-weight: 600;
+}
+caption{
+    display: none;
+}
+
+/*----------Helper Classes--------------*/
