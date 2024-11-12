@@ -1,0 +1,89 @@
+@font-face {
+    font-family: FigTree;
+    src: url(../fonts/Figtree-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: FigTreeItalic;
+    src: url(../fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #f5d04e;
+}
+.card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+article{
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow:10px 10px 0px 1px #000000;
+    border: 2px solid black;
+}
+.card-container{
+display: flex;
+flex-direction: column;
+padding: 2rem;
+font-family: "FigTree", sans-serif;
+font-size: 1.2rem;
+width: 40rem;;
+
+
+}
+.container-img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 2rem;
+    
+}
+.card-container h2{
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-top: 1.6rem;
+}
+.tag{
+    background-color: #f3d051;
+    align-self: flex-start;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: .4rem 1rem;
+    
+}
+.time {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 1.2rem;
+}
+.main-description{
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+    color: #969696;
+    font-weight: 600;
+
+}
+.card-container figure{
+    display: flex;
+    align-items: center;
+}
+.card-container figure img{
+    margin-right: 1.2rem;
+}
+figure{
+    margin-top: 2.6rem;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+figure img{
+width: 3.2rem;
+}
