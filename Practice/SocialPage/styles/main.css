@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +12,7 @@ html{
 }
 body{
     background-color: #141414;
-    color: white;
+    color: #e0e0e0;
     
 }
 main{
@@ -17,3 +21,47 @@ main{
     justify-content: center;
     height: 100vh;
 }
+.personal-card-container{
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 3rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    
+}
+.personal-card-head img{
+border-radius: 50%;
+width: 8rem;
+margin-bottom: 2rem;
+
+}
+.personal-card-head h2{
+    margin-bottom: 1rem;
+}
+.personal-card-head p{
+    margin-bottom: 2rem;
+}
+.personal-card-head{
+    justify-content: center;
+    align-items: center;
+}
+.personal-card-body,.personal-card-head{
+    display: flex;
+    flex-direction: column;
+}
+.personal-card-body button{
+    color:#e0e0e0;
+    background-color: #333333;
+    border: none;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 1rem 6rem;
+    font-weight: 600;
+}
+.personal-card-head :nth-child(3){
+color:#dbf668;
+font-size: 1rem;
+font-weight: 700;
+}
+
+
