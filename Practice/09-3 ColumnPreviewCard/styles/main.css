@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Kuunari";
+    src: url(../fonts/kuunari-medium-condensed.otf);
+}
+@font-face {
+    font-family: "Figtree";
+    src: url(../fonts/Figtree-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    
+}
+article{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80rem;
+    color: #ffffff;
+    
+}
+.grid-container img{
+    width: 5rem;
+}
+.grid-item-one{
+    background-color: #e28525;
+    
+}
+.grid-item-one h2,.grid-item-two h2, .grid-item-three h2{
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    margin-top:2rem;
+    font-weight: 300;
+    font-family: "Kuunari";
+    
+}
+.grid-item-one p, .grid-item-two p, .grid-item-three p{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.55;
+    font-family: "Figtree";
+    
+}
+.grid-item-one button,.grid-item-two button, .grid-item-three button{
+    margin-top: 6rem;
+    border: none;
+    padding:1rem 3rem;
+    border-radius: 20px;
+    background-color: white;
+    font-family: "Figtree";
+    font-weight: 600;
+}
+.grid-item-one button{
+    color: #e28525;
+}
+.grid-item-two button{
+    color: #016972;
+}
+.grid-item-three button{
+    color: #00403f;
+}
+.grid-item-two{
+    background-color: #016972;
+}
+.grid-item-three{
+    background-color: #00403f;
+}
+.grid-item-one, .grid-item-two, .grid-item-three{
+    padding:4rem;
+}
+@media (max-width: 57rem) {
+    .grid-container {
+        grid-template-columns: 1fr; /* One column layout */
+        width: 30rem; /* Make the container responsive */
+    }
+    
+    article {
+        padding: 2rem 0; /* Add top and bottom padding to ensure content is not clipped */
+        height: auto; /* Adjust height to accommodate all items */
+    }
+}
