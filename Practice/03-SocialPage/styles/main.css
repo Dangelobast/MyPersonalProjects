@@ -46,12 +46,13 @@ margin-bottom: 2rem;
     align-items: center;
 }
 
-.personal-card-body,.personal-card-head{
+.personal-card-body , .personal-card-head{
     display: flex;
     flex-direction: column;
 }
-.personal-card-body button{
-    color:#e0e0e0;
+.personal-card-body li{
+    text-align: center;
+    list-style: none;
     background-color: #333333;
     border: none;
     border-radius: 0.4rem;
@@ -62,9 +63,13 @@ margin-bottom: 2rem;
     font-family: "Inter", sans-serif;
     transition: 0.1s ease;
 }
-.personal-card-body button:hover{
+.personal-card-body li a {
+    text-decoration: none;
+    color:inherit;
+}
+.personal-card-body li:hover{
 background-color: #c4f82a;
-color: #000000;
+color: #000000 !important;
 transform: scale(1.1)
 }
 .personal-card-head :nth-child(3){
