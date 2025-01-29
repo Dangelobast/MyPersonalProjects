@@ -33,11 +33,11 @@ article{
 .container-image {
     background-image: linear-gradient(
       to right,
-      #831fbd5e,
-      #831fbd5e
+      #a734c77b,
+      #a734c77b
     ),
     url(../images/image-header-desktop.jpg);
-
+background-repeat: no-repeat;
   
   width: 100%;
     
@@ -46,16 +46,15 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     padding-left: 6rem;
     padding-right: 10rem;
     
 }
-.card-container-inner h2{
+.card-container-inner h1{
     font-size: 3.8rem;
     margin-bottom: 2.4rem;
 }
-.card-container-inner h2 span{
+.card-container-inner h1 span{
     color: #b05dde;
 }
 .card-container-inner p{
