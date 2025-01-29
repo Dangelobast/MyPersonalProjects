@@ -87,3 +87,16 @@ figure{
 figure img{
 width: 3.2rem;
 }
+
+
+/*Simple query*/
+@media (max-width:29em){
+html{
+    font-size: 50%;
+}
+}
+@media (max-width:24em){
+    html{
+    font-size: 38%;
+    }
+}
