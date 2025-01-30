@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "FigTree";
+    src: url(../fonts/Figtree-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: "Libre";
+    src: url(../fonts/LibreBaskerville-Bold.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +14,7 @@
 }
 html{
     font-size: 62.5%;
+    
 }
 body{
  background-color: #f3eae3;
@@ -17,45 +27,69 @@ body{
     
 }
 article{
-    width: 65rem;
+   width: 70rem;
 }
 .card-content{
     display: flex;
     flex-direction: column;
     padding: 4rem;
+    font-family: serif;
 }
 .card-content h1{
-    font-size: 4rem;
+    font-size: 3.4rem;
     margin-top: 1.6rem;
+    font-family: "Libre";
 }
 .card-content p{
-    font-size: 1.6rem;
-    margin-top: 1.4rem;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    margin-top: 1.6rem;
+    margin-bottom: 2.6rem;
+    color: gray;
+    font-family: "FigTree";
+    line-height:1.7;
+    
 }
 .card-content-head span{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     letter-spacing: 2px;
+    letter-spacing: .46rem;
+    color: gray;
+    font-weight: 400;
+    font-family: "FigTree";
+}
+.card-content-body div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
 }
 .card-content-body span:nth-child(1){
- font-size: 4.2rem;
+ font-size: 3.6rem;
  color:#3d8168;
- margin-right: 2.4rem;
+ font-family: "Libre";
 
 }
 .card-content-body span:nth-child(2){
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color:gray;
+    font-family: "Libre";
 }
 .card-content-footer{
     margin-top: 4rem;
 }
 .card-content-footer button{
-    padding: 2rem 7rem;
+    width: 100%;
+    height: 4.8rem;
     background-color: #3d8168;
     border:none;
     border-radius: 4px;
     color: #ffffff;
+    font-family: "FigTree";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition:background-color 0.3s;
 }
 article{
     display: flex;
@@ -67,4 +101,10 @@ article{
 article img{
     width: 35rem;
     
+}
+.cart-icon{
+    width: 1.7rem;
+}
+.card-content-footer button:hover{
+ background-color: #1a4031;
 }
