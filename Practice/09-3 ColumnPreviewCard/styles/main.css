@@ -14,9 +14,6 @@
 html{
     font-size: 62.5%;
 }
-body{
-    
-}
 article{
     display: grid;
     place-items: center;
@@ -27,8 +24,8 @@ article{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border-radius: 10px;
-    overflow: hidden;
     width: 80rem;
+    overflow: hidden;
     color: #ffffff;
     
 }
@@ -66,12 +63,30 @@ article{
 }
 .grid-item-one button{
     color: #e28525;
+    transition: all 0.3s;
 }
 .grid-item-two button{
     color: #016972;
+    transition: all 0.3s;
 }
 .grid-item-three button{
     color: #00403f;
+    transition: all 0.3s;
+}
+.grid-item-one button:hover{
+ background-color: #e28525;
+ color: #ffffff;
+ box-shadow: 0 0 0 2px #ffffff;
+}
+.grid-item-two button:hover{
+    background-color: #016972;
+    color: #ffffff;
+    box-shadow: 0 0 0 2px #ffffff;
+}
+.grid-item-three button:hover{
+    background-color: #00403f;
+    color: #ffffff;
+    box-shadow: 0 0 0 2px #ffffff;
 }
 .grid-item-two{
     background-color: #016972;
@@ -82,14 +97,14 @@ article{
 .grid-item-one, .grid-item-two, .grid-item-three{
     padding:4rem;
 }
-@media (max-width: 57rem) {
+@media (max-width: 50rem) {
     .grid-container {
-        grid-template-columns: 1fr; /* One column layout */
-        width: 30rem; /* Make the container responsive */
+        grid-template-columns: 1fr; 
+        width: 38rem; 
     }
     
     article {
-        padding: 2rem 0; /* Add top and bottom padding to ensure content is not clipped */
-        height: auto; /* Adjust height to accommodate all items */
+        padding: 2rem 0; 
+        height: auto; 
     }
 }
