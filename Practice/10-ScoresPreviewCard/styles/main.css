@@ -1,0 +1,129 @@
+@font-face {
+    font-family: hanken;
+    src: url(../fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "hanken", sans-serif;
+}
+article{
+    width: 54rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius:12px;
+    overflow: hidden;
+    box-shadow: 2px 2px 20px 4px #e8f5ff;
+
+}
+.left-container{
+    background: linear-gradient(to bottom, #6440ff, #312be5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 4rem;
+    
+    
+}
+.left-container h2 {
+    color: #cbcbcb;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2.6rem;
+}
+.left-container h3{
+    color: #ffffff;
+    font-size:1.8rem;
+    margin-top: 1.8rem;
+}
+.left-container p{
+    color: #c2c2c2;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.scores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    border-radius: 50%;
+    padding: 2.4rem;
+    background: linear-gradient(to bottom, #4d22c9, #4734f0);
+    margin-top: 2rem;
+}
+.scores span:first-child{
+    font-size: 6rem;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1;
+
+}
+.scores span:nth-child(2){
+    font-size: 1.2rem;
+    color: #9f9f9f;
+}
+.right-container{
+    background-color: #ffffff;
+    
+}
+.right-container h2{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2.2rem;
+}
+.right-container button{
+    font-family: "Hanken", sans-serif;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 23rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: #303b59;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: 500;
+    transition: background-color 1s ease, background-image 1s ease;
+    
+}
+.right-container button:hover{
+    background-image: linear-gradient(to bottom, #6440ff, #312be5); /* Gradient background on hover */
+    background-color: transparent;
+}
+.summary-container{
+    padding: .5rem;
+    margin: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    
+    border-radius: 4px;
+}
+.summary-container div{
+    display: flex;
+    align-items: center;
+}
+.right-container div:nth-child(2){
+    background-color: #fff6f5;
+}
+.right-container div:nth-child(3){
+    background-color: #fffbf2;
+}
+.right-container div:nth-child(4){
+    background-color: #f2fbfa;
+}
+.right-container div:nth-child(5){
+    background-color: #f3f3fd;
+}
