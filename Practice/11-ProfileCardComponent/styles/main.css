@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Kumbh";
+    src: url(../fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf);
+}
+:root{
+    --dark-cyan:hsl(185, 75%, 39%);
+    --dark-desaturated-blue:hsl(229, 23%, 23%);
+    --dark-grayish-blue:hsl(227, 10%, 46%);
+    --dark-gray-neutral:hsl(0, 0%, 59%);
+}
+*{margin:0;
+padding: 0;
+box-sizing: border-box;}
+body{
+    background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+    background-position: -110% 155%, 180% -100%;
+    background-repeat: no-repeat, no-repeat;
+    background-color: var(--dark-cyan);
+    background-size: 75%, 75%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+article{
+    width: 28rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    border-radius: 20px;
+    overflow-x: hidden;
+    font-family: "Kumbh";
+}
+.card-background {
+    width: 100%;
+}
+.card-background-container{
+    position: relative;
+}
+.profile-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+.person-name{
+    margin-top: 5rem;
+    font-weight: 700;
+    font-size:1.2rem;
+}
+.person-name span{
+    font-weight: 400;
+    color: var(--dark-gray-neutral);
+}
+.country{
+    color: var(--dark-gray-neutral);
+    margin-top: .5rem;
+}
+article dl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 2.4rem;
+    margin-bottom: 2rem;
+}
+dl{
+    border-top: 1px solid #bdbdbd6f;
+    width: 100%;
+    padding-top: 2rem;
+}
+dl div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: .4rem;
+}
+dl dd{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+dl dt{
+    color: var(--dark-gray-neutral);
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+@media (max-width:46rem){
+    article{
+        margin-left: 1rem;
+    margin-right: 1rem;
+    }
+
+}
+@media (max-width:24em){
+ body{
+    background-position: -170% -35%, 320% 110%;
+    background-size: 82% , 82%;
+    
+ }
+ article{
+    margin-left: 1rem;
+    margin-right: 1rem;
+ }
+
+}
