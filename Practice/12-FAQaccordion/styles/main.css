@@ -88,3 +88,43 @@ article{
 .icon-open{
     cursor: pointer;
 }
+@media (max-width: 89em)  {
+    article{
+        top:9rem;
+    }
+}
+@media (max-width:69em){
+    article{
+        top:3rem;
+    }
+}
+@media (max-width:44em){
+    article{
+       margin-left: 1rem;
+       margin-right: 1rem;
+    }
+    body{
+    background-size: 65rem;
+    }
+    .question{
+        margin-right: 2rem;
+    }
+}
+@media (max-width:24em){
+    .faqs-head{
+        font-size: 1.6rem;
+        gap: 1rem;
+    }
+    .star-icon{
+        width: 2rem;
+    }
+    .question-head h2{
+        font-size: 1.1rem;
+    }
+    .question-container p {
+        font-size: 1rem;
+    }
+    .open-item{
+        max-height: 350px;
+    }
+}
